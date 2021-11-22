@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html class='v2 no-js' dir='ltr' lang='es' prefix='og: http://ogp.me/ns# article: http://ogp.me/ns/article#' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/1394523530-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='never' name='referrer'/>
+<meta charset='utf-8'/>
+<!-- http://emiliocobos.net/seo-blogger-head/ -->
+<!-- script redirección: http://emiliocobos.net/evitar-la-redireccion-nueva-de-blogger/ -->
+<script type='text/javascript'>
+		//<![CDATA[
+		(function(){
+			var URL = document.URL,
+				reg = /\.blogspot\.(com\...|..)\//
+			if( URL.match( reg ) ){
+				window.location = URL.replace( reg, ".blogspot.com\/ncr\/" )
+			}
+		})()
+		// Fallback CSS para cuando no hay javascript
+		document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		//]]>
+	</script>
+<!-- Comentarios condicionales IE -> Permite usar CSS condicionalmente La mejor forma de usarlos sería en el <html>, pero no se puede sin tranformar en entidades -->
+<!--[if IE 8]> <script type='text/javascript'>document.documentElement.className += ' ie8 lt-ie9'</script> <![endif]-->
+<!--[if IE 7]> <script type='text/javascript'>document.documentElement.className += ' ie7 lt-ie8 lt-ie9'</script> <![endif]-->
+<!--[if lt IE 7]> <script type='text/javascript'>document.documentElement.className += ' ie6 lt-ie7 lt-ie8 lt-ie9'</script> <![endif]-->
+<!--Meta X-UA-Compatible -> Mejor experiencia para IE -->
+<!-- <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/> -->
+<!-- meta viewport -> dispositivos móviles -->
+<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0' name='viewport'/>
+<!-- Metas para facebook (name=description la incluye all-head-content) -->
+<!-- <meta property='og:title'> la incluimos donde el título, por conveniencia -->
+<meta content='Pruebas sistematicas' property='og:site_name'/>
+<meta content='blog' property='og:type'/>
+<meta content='http://calendario-futbol.blogspot.com/2020/12/hola-mundo.html' property='og:url'/>
+<!-- all-head-content incluye la meta description si existe data:blog.metaDescription En el home siempre la hay, pero en este caso concreto no -->
+<meta content='Hola mundo: Pruebas sistematicas' name='description' property='og:description'/>
+<!-- Imagen del post -->
+<!-- Indexación -->
+<!-- En el resto (páginas y posts) sí -->
+<meta content='index,follow' name='robots'/>
+<!-- Título -->
+<meta content='Hola mundo | Pruebas sistematicas' property='og:title'/>
+<title>Hola mundo | Pruebas sistematicas</title>
+<!-- all-head-content. Incluye: => link[rel=me] => link[rel=publisher] => link[rel=canonical] => link[rel=image_src] si hay una imagen en la entrada => meta[name=description] si existe data:blog.metaDescription => meta[http-equiv=content-type] => links del feed => scripts para compatibilidad con HMTL5 -->
+<!-- <b:include data='blog' name='all-head-content'/> -->
+<!-- Meta content-type está obsoleta, usaremos charset -->
+<meta content='blogger' name='generator'/>
+<!-- Link al favicon (es el personalizado) -->
+<link href='https://calendario-futbol.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<!-- Link rel=canonical -->
+<link href='http://calendario-futbol.blogspot.com/2020/12/hola-mundo.html' rel='canonical'/>
+<!-- La descripción -->
+<!-- La imagen del post -->
+<!-- Link rel=me si existe -->
+<!-- Links del feed -->
+<link rel="alternate" type="application/atom+xml" title="Pruebas sistematicas - Atom" href="https://calendario-futbol.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Pruebas sistematicas - RSS" href="https://calendario-futbol.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Pruebas sistematicas - Atom" href="https://www.blogger.com/feeds/8265649085720875247/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Pruebas sistematicas - Atom" href="https://calendario-futbol.blogspot.com/feeds/6982527336094564605/comments/default" />
+<!-- Compatibilidad con HTML5 sí, pero no para IE9, que es un buen navegador -->
+<!--[if lt IE 9]> <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script> <![endif]-->
+<!-- /all-head-content -->
+<!-- http://emiliocobos.net/eliminar-los-estilos-y-scripts-por-defecto-de-blogger/ -->
+	<style id='page-skin-1'>/*
+	
+<style id='page-skin-1' type='text/css'><!--
+*/
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Lienzo - Plantilla básica para blogger
+Designer: Emilio Cobos
+URL:      emiliocobos.net
+----------------------------------------------- */
+/*
+* Aquí puedes añadir tu CSS, o bien justo debajo de </b:skin> en una hoja de estilos externa.
+* Te recomiendo que una de tus primeras reglas sea:
+* .item-control {
+*    display: none;
+* }
+* Para ocultar los iconos de edición rápida.
+* Algunos elementos clave para definir el estilo del sitio:
+* .site-wrapper             : Un contenedor general del sitio
+* .site-header              : La parte externa de la cabecera
+*   .site-title             : El logo
+*     .site-title a         : El link interno del logo
+* .content-wrapper          : El contenido general (lo que no es ni header ni footer)
+*   .content                : Columna central
+*     .post-outer           : La parte externa de los posts
+*       .post-title         : El título de los posts
+*         .post-title a     : El link del título
+*       .post-header        : Contenedor de los links de la cabecera de los posts
+*         .post-author      : El nombre del autor
+*         .post-published   : La fecha de publicación del post
+*         .post-tags        : Las etiquetas del post
+*       .post-body          : El texto del post
+*       .post-footer        : La parte de abajo del post
+*     .post-numero-0        : Primer post de todos
+*     .post-numero-1        : Segundo post de todos
+*     // así sucesivamente
+*   .sidebar                : Columna lateral (la sidebar de toda la vida)
+*     .widget               : Cada uno de los widgets
+*       .widget .title      : El título de los widgets
+* .site-footer              : El footer del sitio
+*   .widget                 : Cada uno de los widgets del footer
+*
+*
+* Si te interesa un CSS básico, pásate por http://emiliocobos.net/lienzo-plantilla-basica-blogger/
+*/
+
+--></style>
+<style>
+#html.post {
+    padding: 0 0px;
+    margin: 0px 0;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Versión sin prefijo, actualmente
+                                      compatible con Chrome y Opera */
+}
+#blog-pager {
+    display: none;
+}
+#footer {
+    display: none;
+}
+#post-footer{
+    display: none;
+}
+#site-wrapper{
+    padding: 20px;
+}
+#content-wrapper{
+    padding: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+body, html{
+		width: 100%;
+		height: 100%;	
+		margin: 0;
+		font-family: verdana;
+		overflow-X: hidden;/* optional */
+        background: black;
+        color: white;
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Versión sin prefijo, actualmente
+                                      compatible con Chrome y Opera */
+	}
+
+#i1, #i2, #i3, #i4, #i5{ display: none;}
+
+.container{
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		width: 70%;
+		height: 0;
+		padding-bottom: 38%;
+	  user-select: none;
+		background-color: #000000;
+		border: solid 0px #616161;
+		border-radius:10px ; 
+	}
+
+	.container .slide_img{
+		position: absolute;
+		width: 100%;;
+		height: 100%;
+	}
+	.container .slide_img img{
+		width: inherit;
+		height: inherit;
+	}
+
+	 .prev, .next{
+		width: 12%;
+		height: inherit;
+		position: absolute;
+		top:0; 
+		background-color: rgba(88, 88, 88,.2);
+		color:rgba(244, 244, 244,.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.next{right:0;}
+	.prev{left:0;}
+
+	label span{
+		position: absolute;
+		font-size: 100pt;
+		top: 50%;
+	 	transform: translateY(-50%);
+	}
+
+	.prev:hover, .next:hover{
+		transition: .3s;
+		background-color: rgba(88, 88, 89,.8);
+		color: #ffffff; 
+	}
+
+.container #nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+}
+
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5
+	{ background-color: rgba(255,255,255,.9);}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}		
+
+/* .yt{
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	width: 150px;
+	height:50px;
+	border: outset #2c2c2c 4px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30pt;
+	transition: .5s;
+}
+
+.yt a{
+	text-decoration: none;
+	color: #4c4c4c;
+	transition: .5s;
+}
+
+.yt:hover{
+	background: #4c4c4c;
+	transition: .3s;
+}
+
+.yt:hover a{
+	color: #fff;
+	transition: .3s;
+}
+ */
+@media screen and (max-width: 685px){
+	.container{
+		border: none;
+		width: 100%;
+		height: 0;
+		padding-bottom: 55%; 
+	}	
+	
+	label span { font-size: 50pt; }
+	
+	.prev, .next{
+		width: 15%;
+	}	
+	#nav_slide .dots{
+		width: 12px;
+		height: 12px;
+	}
+}
+@media screen  and(min-width: 970px){
+	.me{ display: none;}
+}
+
+</style>
+<meta content='never' name='referrer'/>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8265649085720875247&amp;zx=3f8254d7-1407-4ac3-8485-6f5d3b4b2799' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8265649085720875247&amp;zx=3f8254d7-1407-4ac3-8485-6f5d3b4b2799' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+</head><!-- http://emiliocobos.net/truco-rapido-para-blogger-personalizar-la-plantilla-con-css-dependiendo-del-tipo-de-pagina/-->
+<body class=' item' data-blog-url='http://calendario-futbol.blogspot.com/2020/12/hola-mundo.html' data-home='false'>
+<div class='site-wrapper'>
+<div class='content-wrapper'>
+<div class='content' id='content' role='main'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [defaultAdStart]-->
+<div class='post-outer post-numero-0'>
+<div class='post hentry' id='6982527336094564605' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<div class='post-body entry-content' id='post-body-6982527336094564605' itemprop='articleBody'>
+<!--DOCTYPE html-->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pure css3 animated chevron toggle up/down</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="https://drive.google.com/uc?export=download&id=1oV1AQy3dVZmBEXRCvz6spVLY2DRYaBot">
+</head>
+  <style>
+  
+.encabezado {
+    text-align: center;
+    font-weight: bold;
+    font-family: revert;
+    font-size: 6.5vw;
+    color: white;
+}
+    .panel-title a {
+    color: black;
+}
+    .widget {
+	margin: 0.5em;
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 100%;
+	padding: 5px;
+	font-size: 1.8em;
+	text-align: center;
+  	color: white;
+ }
+    
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 1rem;
+	display: block;
+	    margin: 0px;
+
+}
+      </style>
+
+<body>
+    <br>
+<div class="encabezado"> Evento para el dia de hoy </div>  
+  <br>
+  <div class="bactualizar"> 
+  <input type="button" value="Actualizar señales" onclick="location.reload()"/>
+  </div>
+
+    <div class="bactualizar2"> 
+<div class="wrap">
+		<div class="widget">
+
+			<div class="reloj">
+				<p id="horas" class="horas">11</p>
+				<p>:</p>
+				<p id="minutos" class="minutos">48</p>
+				<p>:</p>
+				<div class="caja-segundos">
+					<p id="ampm" class="ampm">AM</p>
+					<p id="segundos" class="segundos">12</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+    
+  <div style="padding-left: 1.2em; padding-right: 1.2em;">
+  <marquee style="font-weight: bold; color: red;font-size: 1.5em;">Actualizar las señales 5 minutos antes de cada evento</marquee>
+    </div>
+
+  
+<!-- partial:index.partial.html -->
+<div class="container"> 
+  <!-- Acordion container -->
+  <div class="panel-group" id="accordion"> 
+    <!-- First item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90> 
+          14:45 &#10072; Gales vs Bélgica	 <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse"><div class="panel-body"> 
+ <a class="boton0" href="https://vid.addyadds.us/static/streaming-playlists/hls/0096e526-503e-4be9-b4c2-0a7515e111e7/0.m3u8?aa?aa">Señal 1</a>      
+<a class="boton0" href="https://vid.addyadds.us/static/streaming-playlists/hls/0096e526-503e-4be9-b4c2-0a7515e111e7/0.m3u8?aa?aa">Señal 2</a>    
+           
+   </div>
+        </div>
+    </div>
+       
+    <!-- Second item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          14:45 &#10072; Finlandia vs Francia		 <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500044/97617290.m3u8?aa">Señal 1</a>      
+<a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000008/97369813.m3u8?aa">Señal 2</a>        
+               
+     </div>
+      </div>
+    </div>
+    <!-- Third item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          14:45 &#10072; Países Bajos vs Noruega		<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500044/97617132.m3u8?aa">Señal 1</a>      
+<a class="boton0" href="https://google-br.cdn.booyah.live/hls/1000008/97476072.m3u8?aa">Señal 2</a>    
+ 
+        </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+
+    <!-- 5 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          15:00 &#10072; Bolivia vs Uruguay <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://d3awnlgqz0szay.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index.m3u8?aa">Señal 1</a> 
+<a class="boton0" href="https://nedmedia.akamaized.net/hls/live/2034243/feed1/master_360.m3u8?aa">Señal 2</a>            
+<a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000007/97001328.m3u8?aa">Señal 3</a>            
+             
+          </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 6 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse6"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90> 
+          16:00 &#10072; Venezuela vs Perú	<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500110/97622001.m3u8?aa">Señal 1</a>      
+ <a class="boton0" href="https://live-ak.vimeocdn.com/exp=1637098302~acl=%2F98c3cb06-5162-4af8-b5ac-66665e9f0da5%2F%2A~hmac=30865b8284dbaf4147e4be55a09c8935b31af4e672155c7384d2a31313f4fa87/98c3cb06-5162-4af8-b5ac-66665e9f0da5/chunklist_b2056000.m3u8?aa">Señal 2</a> 
+ <a class="boton0" href="https://vcp.myplaytv.com/tlthd/tlthd/chunklist_w135043446.m3u8?aa">Señal 3</a>      
+     
+          </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+        <!-- 4 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          17:00 &#10072; Jamaica vs EE. UU.  <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://vid.addyadds.us/static/streaming-playlists/hls/0096e526-503e-4be9-b4c2-0a7515e111e7/0.m3u8?aa">Señal 1</a>      
+<a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500044/97617808.m3u8?aa">Señal 2</a>
+ <a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000008/97369813.m3u8?aa">Señal 3</a>      
+        
+       </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 7 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse7"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          18:00 &#10072; Colombia vs Paraguay <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse"> <div class="panel-body">
+<a class="boton0" href="https://mdstrm.com/live-stream-playlist/58d539f1a3ec37fa097a75de.m3u8?aa">Señal 1</a>
+<a class="boton0" href="https://google-br.cdn.booyah.live/hls/1000009/97001883.m3u8?aa">Señal 2</a>
+<a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1500117/94768193.m3u8?aa">Señal 3</a>
+     
+          </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 8 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          18:30 &#10072; Argentina vs Brasil	<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://d3awnlgqz0szay.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index.m3u8?aa?aa">Señal 1</a> 
+<a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000007/97001328.m3u8?aaa">Señal 2</a>      
+<a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500110/97622001.m3u8?aaa">Señal 3</a>      
+        
+        </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 9 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse9"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          19:15 &#10072; Chile vs Ecuador	<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="go:ECDF1">Señal 1</a>      
+ <a class="boton0" href="go:GTV1">Señal 2</a>  
+ <a class="boton0" href="https://edge5-hr.cvattv.com.ar/live/c2live/Eventos_2_HD/verimatrix_rotating/Eventos_2_HD-audio_20001=145200-video=2499968.m3u8?a">Señal 3</a> 
+ <a class="boton0" href="https://m3ukodi.com/servicios/twich/twich.php?canal=laligapro2021&f=.m3u8">Señal 4</a>      
+  <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500044/97633210.m3u8?aa">Señal 5</a>      
+ <a class="boton0" href="https://nedmedia.akamaized.net/hls/live/2034243/feed1/master_360.m3u8?aaaa">Señal 6</a>      
+ <a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000001/97625801.m3u8?aa">Señal 7</a>      
+  <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1500044/97633210.m3u8?aa">Señal 8</a>      
+         
+             </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+<!-- 11 item -->
+    <div class="panel panel-default" style="display:yes">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse10"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          20:05 &#10072; Panamá vs El Salvador	<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://bcovlive-a.akamaihd.net/a2e5e035037742ff8fd4bae79de16ad4/us-east-1/6058004209001/playlist_dvr.m3u8?aa">Señal 1</a>      
+<a class="boton0" href="https://bcovlive-a.akamaihd.net/a2e5e035037742ff8fd4bae79de16ad4/us-east-1/6058004209001/playlist_dvr.m3u8?aaa">Señal 2</a>       
+               </div>
+      </div>
+    </div>
+    <!-- End of accordion -->     
+    <!-- 10 item -->
+    <div class="panel panel-default" style="display:yes">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse11"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          21:05 &#10072; Canadá vs México		<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000007/97001328.m3u8?aaa">Señal 1</a>      
+<a class="boton0" href="https://centurylink.br.cdn.booyah.live/hls/1000007/97001328.m3u8?aaa">Señal 2</a>       
+     
+        
+         </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    
+     <!-- 11 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse12"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          14:45 &#10072; Rennes vs Olympique Lyon<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://sv3.futbollibre.net/bein_es.html?">Señal 1</a>      
+<a class="boton0" href="https://sv3.futbollibre.net/bein_es.html?">Señal 2</a>        
+       
+           </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 12 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse13"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          14:45 &#10072; Milan vs Inter<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse13" class="panel-collapse collapse"> <div class="panel-body">
+ <a class="boton0" href="https://google-br.cdn.booyah.live/hls/1000003/96074217.m3u8?aa?aa">Señal 1</a>      
+<a class="boton0" href="https://google-br.cdn.booyah.live/hls/1000003/96074217.m3u8?aa?aa">Señal 2</a>         
+         
+         </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 13 item -->
+    <div class="panel panel-default" style="display:yes">
+      <div class="panel-heading" style="background: yellow;">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse14"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          16:00 &#10072; ECDF - EL CANAL DEL FUTBOL	<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse14" class="panel-collapse collapse"> <div class="panel-body">
+<a class="boton0" href="go:ECDF1">Señal 1</a>
+<a class="boton0" href="go:ECDFZ">Señal 2</a>           
+         </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+    <!-- 14 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading" style="background: yellow;">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse15"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          12:00 &#10072; F1 - PREMIO DE BRAZIL <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse15" class="panel-collapse collapse"> <div class="panel-body">
+<a class="boton0" href="https://nyc-haproxy.angelthump.com/hls/elpepe3345/index.m3u8?aa">Señal 1</a>
+<a class="boton0" href="https://content.uplynk.com/channel/da6a46e9a1d7412a958c45f1185df9c1.m3u8?cqs=gIQfqV1orCBXv_4VIZW_s17C4MmKI1713QcPUfKOWqmott0pjzog3kug-w-9q8bunYeTJqewIrQANrvzpkVm-TD9JPYxqHmMq7xqbGNa7S9uJ6gc9o6gjqs4SPDu25oRxe5LMFKs7JiSLyU5501JDFac-17qRel2GrIccBEKoS-fw_I_gO1QNhxznEF0_cFakSfWEgadWWZFih0eSxuKXP6G6jiIvZcwqWXmljWlde3CVGgZLwuKaOao40182wHZhXeGDH-bPcPdPNsEvHcurtcl3UVMQy9i3Lp58zN_WLDoSBTEi1VpEG452GIg4LUluI6Fggef7mE9tF7k1zltnjkA_d1oL3u-IwlCxvXr1RnObXuSxkiBaY5EO2xOYdg6BNgsDi2lWMDQWiPq-RfIfgDC52nBRAY6tb7_3IEA6nmE7HT_RZnv_piWwbhweTjSR1Io5TrWziXlPe1K7yHMCw==&kid=7e62bb2a550343b5a8b7b48e63cc22bf">Señal 2</a>
+   
+          </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+     <!-- 15 item -->
+         <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse16"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          19:00 &#10072; Manta vs Nueve de Octubre		<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse16" class="panel-collapse collapse"> <div class="panel-body">
+<a class="boton0" href="https://bu0.short.gy/gtv1.m3u8?aa">Señal 1</a>
+<a class="boton0" href="https://bu0.short.gy/gtv2.m3u8?p">Señal 2</a>
+<a class="boton0" href="https://bu0.short.gy/gtv3.m3u8?p">Señal 3</a>
+<a class="boton0" href="https://sv3.futbollibre.net/php/goltv.php?johanstream.m3u8?aaa">Señal 4</a>
+            
+        </div>
+      </div>
+    </div>
+    <!-- End of accordion --> 
+     <!-- 16 item -->
+    <div class="panel panel-default" style="display:none">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse17"> <h90 style="color: green; font-size: 1.2em;">&#9679;</h90>
+          19:00 &#10072; Guayaquil City vs Independiente del Valle	 <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+      </div>
+      <div id="collapse17" class="panel-collapse collapse"> <div class="panel-body">
+<a class="boton0" href="https://bu0.short.gy/gtv1.m3u8?aa">Señal 1</a>
+<a class="boton0" href="https://bu0.short.gy/gtv2.m3u8?p">Señal 2</a>
+<a class="boton0" href="https://bu0.short.gy/gtv3.m3u8?p">Señal 3</a>
+<a class="boton0" href="https://sv3.futbollibre.net/php/goltv.php?johanstream.m3u8?aaa">Señal 4</a>
+   
+        </div>
+      </div>
+    </div>
+    <!-- End of accordion -->    
+  </div>  
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+<script>
+//Toggle chevrons
+
+function toggleChevron(e) {
+$(e.target)
+.prev('.panel-heading')
+.find("i.indicator")
+.toggleClass('glyphicon-chevron-down-custom glyphicon-chevron-up-custom');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+  <script>
+  (function(){
+	var actualizarHora = function(){
+		// Obtenemos la fecha actual, incluyendo las horas, minutos, segundos, dia de la semana, dia del mes, mes y año;
+		var fecha = new Date(),
+			horas = fecha.getHours(),
+			ampm,
+			minutos = fecha.getMinutes(),
+			segundos = fecha.getSeconds(),
+			diaSemana = fecha.getDay(),
+			dia = fecha.getDate(),
+			mes = fecha.getMonth(),
+			year = fecha.getFullYear();
+
+		// Accedemos a los elementos del DOM para agregar mas adelante sus correspondientes valores
+		var pHoras = document.getElementById('horas'),
+			pAMPM = document.getElementById('ampm'),
+			pMinutos = document.getElementById('minutos'),
+			pSegundos = document.getElementById('segundos'),
+			pDiaSemana = document.getElementById('diaSemana'),
+			pDia = document.getElementById('dia'),
+			pMes = document.getElementById('mes'),
+			pYear = document.getElementById('year');
+
+		// Cambiamos las hora de 24 a 12 horas y establecemos si es AM o PM
+
+		if (horas >= 24) {
+			horas = horas - 12;
+			ampm = 'PM';
+		} else {
+			ampm = 'AM';
+		}
+
+		// Si queremos mostrar un cero antes de las horas ejecutamos este condicional
+		// if (horas < 10){horas = '0' + horas;}
+		pHoras.textContent = horas;
+		pAMPM.textContent = ampm;
+
+		// Minutos y Segundos
+		if (minutos < 10){ minutos = "0" + minutos; }
+		if (segundos < 10){ segundos = "0" + segundos; }
+
+		pMinutos.textContent = minutos;
+		pSegundos.textContent = segundos;
+	};
+
+	actualizarHora();
+	var intervalo = setInterval(actualizarHora, 1000);
+}())
+  </script>
+
+</body>
+</html>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+<!--Can't find substitution for tag [adEnd]-->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='https://calendario-futbol.blogspot.com/2021/01/galeria.html' id='Blog1_blog-pager-newer-link' title='Entrada más reciente'>Entrada más reciente</a>
+</span>
+<a class='home-link' href='https://calendario-futbol.blogspot.com/'>Inicio</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+</div>
+</div></div>
+</div>
+<div class='sidebar no-items section' id='sidebar'></div>
+</div><!-- .content-wrapper -->
+</div><!-- .site-wrapper -->
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1896816315-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY40TrKW2vBoxi4L7Hin63Cmhkqv7Q:1637117252228';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8265649085720875247','//calendario-futbol.blogspot.com/2020/12/hola-mundo.html','8265649085720875247');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '8265649085720875247', 'title': 'Pruebas sistematicas', 'url': 'https://calendario-futbol.blogspot.com/2020/12/hola-mundo.html', 'canonicalUrl': 'http://calendario-futbol.blogspot.com/2020/12/hola-mundo.html', 'homepageUrl': 'https://calendario-futbol.blogspot.com/', 'searchUrl': 'https://calendario-futbol.blogspot.com/search', 'canonicalHomepageUrl': 'http://calendario-futbol.blogspot.com/', 'blogspotFaviconUrl': 'https://calendario-futbol.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'es', 'localeUnderscoreDelimited': 'es', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pruebas sistematicas - Atom\x22 href\x3d\x22https://calendario-futbol.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Pruebas sistematicas - RSS\x22 href\x3d\x22https://calendario-futbol.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pruebas sistematicas - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/8265649085720875247/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Pruebas sistematicas - Atom\x22 href\x3d\x22https://calendario-futbol.blogspot.com/feeds/6982527336094564605/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/cdbdb1903ee0053e', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Obtener enlace', 'key': 'link', 'shareMessage': 'Obtener enlace', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Compartir en Facebook', 'target': 'facebook'}, {'name': 'Escribe un blog', 'key': 'blogThis', 'shareMessage': 'Escribe un blog', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Compartir en Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Compartir en Pinterest', 'target': 'pinterest'}, {'name': 'Correo electr\xf3nico', 'key': 'email', 'shareMessage': 'Correo electr\xf3nico', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27es\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Leer m\xe1s', 'pageType': 'item', 'postId': '6982527336094564605', 'pageName': 'Hola mundo', 'pageTitle': 'Pruebas sistematicas: Hola mundo'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Editar', 'linkCopiedToClipboard': 'El enlace se ha copiado en el Portapapeles.', 'ok': 'Aceptar', 'postLink': 'Enlace de la entrada'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personalizado', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Hola mundo', 'description': '        CodePen - Pure css3 animated chevron toggle up/down                 Evento para el dia de hoy                         \t\t   \t\t\t  \t\t\t\t...', 'url': 'https://calendario-futbol.blogspot.com/2020/12/hola-mundo.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 6982527336094564605}}]);
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3963675490-lbx__es.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/4076883957-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>
